@@ -2,15 +2,199 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>HTML Academy: Марафон «Заверстай 2.0»</title>
-  <link rel="stylesheet" href="css/normalize.css" />
-  <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Личный блог Анны</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body></body>
+<body>
+  <header class="header header--index">
+    <div class="container">
+      <h1 class="visually-hidden">Личный блог Анны</h1>
+      <nav class="main-nav">
+        <a><img src="img/logo.svg" alt="logo"></a>
+        <ul>
+          <li>
+            <a href="#artictles">Статьи</a>
+          </li>
+          <li>
+            <a href="#about">Обо мне</a>
+          </li>
+          <li>
+            <a href="#portfolio">Портфолио</a>
+          </li>
+          <li>
+            <a href="#write">Написать мне</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <section id="artictles">
+        <h2>Все статьи</h2>
+
+        <select name="article_topics">
+          <option value="all" selected>Выбрать тему</option>
+          <option value="travels">путешествия</option>
+          <option value="town">город</option>
+          <option value="books">книги</option>
+          <option value="photos">фотографии</option>
+          <option value="recipes">рецепты</option>
+        </select>
+
+        <ul class="artictles-list">
+          <li class="artictle-item artictle-item--small">
+            <h3>Путешествие в Берлин в августе</h3>
+            <img src="img/articles-img-1.jpg" alt="Путешествие в Берлин в августе">
+            <p class="artictle-short">
+              Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!
+            </p>
+            <p class="artictle-tags" data-tags="путешествия">Теги: путешествия</p>
+            <time datetime="2020-09-29">29.09.2020</time>
+          </li>
+
+          <li class="artictle-item artictle-item--small">
+            <h3>Где выпить колдбрю в Москве</h3>
+            <img src="img/articles-img-2.jpg" alt="Где выпить колдбрю в Москве">
+            <p class="artictle-short">
+              Собрала для вас список любимых кофеен, где подают лучший летний напиток.
+            </p>
+            <p class="artictle-tags" data-tags="город">Теги: город</p>
+            <time datetime="2020-07-24">24.07.2020</time>
+          </li>
+
+          <li class="artictle-item artictle-item--small">
+            <h3>Прочитано: книжные рекомендации</h3>
+            <img src="img/articles-img-3.jpg" alt="Прочитано: книжные рекомендации">
+            <p class="artictle-short">
+              Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.
+            </p>
+            <p class="artictle-tags" data-tags="книги">Теги: книги</p>
+            <time datetime="2020-07-15">15.07.2020</time>
+          </li>
+
+          <li class="artictle-item artictle-item--big">
+            <h3>Снимки на плёнку</h3>
+            <img src="img/articles-img-4.jpg" alt="Снимки на плёнку">
+            <p class="artictle-short">
+              Поделилась с вами весенними фотографиями, и секретами удачных снимков.
+            </p>
+            <p class="artictle-tags" data-tags="фотографии">Теги: фотографии</p>
+            <time datetime="2020-06-29">29.06.2020</time>
+          </li>
+
+          <li class="artictle-item artictle-item--big">
+            <h3>Домашний чизкейк</h3>
+            <img src="img/articles-img-5.jpg" alt="Домашний чизкейк">
+            <p class="artictle-short">
+              Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!
+            </p>
+            <p class="artictle-tags" data-tags="рецепты">Теги: рецепты</p>
+            <time datetime="2020-06-24">24.06.2020</time>
+          </li>
+        </ul>
+        <button class="artictles-more">Показать ещё</button>
+      </section>
+
+      <section id="about">
+        <h2>Обо мне</h2>
+
+        <img src="img/about-my.jpg" alt="Моя фотография">
+        <div class="about-text">
+          <p>Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь рассказы о моих путешествиях, снимки
+            на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.</p>
+          <p>Я работаю копирайтером, поэтому мой блог — это ещё и моё портфолио. Ниже размещены несколько моих лучших
+            рабочих текстов. Буду рада новым сотрудничествам!</p>
+          <p>Если вы хотите написать мне — это можно сделать в соцсетях или через форму. Всегда приятно услышать
+            обратную связь от читателей и познакомиться поближе.</p>
+          <p>Приятного чтения!</p>
+        </div>
+        <div class="about-cite">
+          <p>Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю настояющую
+            себя.</p>
+        </div>
+
+      </section>
+
+      <section id="portfolio">
+        <h2>Портфолио</h2>
+
+        <ul class="portfolio-list">
+          <li class="portfolio-item">
+            <a href="#">
+              <h3>Блог HTML Academy</h3>
+              <img src="img/portfolio-img-1.jpg" alt="Как учиться продуктивно">
+              <p class="portfolio-title">«Как учиться продуктивно»</p>
+              <p class="portfolio-description">
+                Про основные методы обучения, которые помогут быстро и надолго запомнить информацию.
+              </p>
+            </a>
+          </li>
+
+          <li class="portfolio-item">
+            <a href="#">
+              <h3>Журнал «LNK»</h3>
+              <img src="img/portfolio-img-2.jpg" alt="Зачем поцелуи нужны человеку? И какие они бывают">
+              <p class="portfolio-title">«Зачем поцелуи нужны человеку?<br>И какие они бывают»</p>
+              <p class="portfolio-description">
+                Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются?<br>
+                Какие мысли вкладывают в этот ритуал? И где корни этой практики?
+              </p>
+            </a>
+          </li>
+
+          <li class="portfolio-item">
+            <a href="#">
+              <h3>Журнал «Т — Л»</h3>
+              <img src="img/portfolio-img-3.jpg" alt="Советы по эффективной удалённой работе">
+              <p class="portfolio-title">«Советы по эффективной удалённой работе»</p>
+              <p class="portfolio-description">
+                Поделилась лайфхаками, которые помогают мне работать продуктивно из дома.
+              </p>
+            </a>
+          </li>
+        </ul>
+
+        <button class="portfolio-more">Показать ещё</button>
+      </section>
+
+      <section id="write">
+        <h2>Написать мне</h2>
+
+        <form class="write-form" method="POST" action="#">
+          <label for="id_sender_name">Ваше имя</label>
+          <input type="text" name="sender_name" id="id_sender_name" placeholder="Иван Иванов" required>
+          <br>
+          <label for="id_sender_email">Email</label>
+          <input type="email" name="sender_email" id="id_sender_email" placeholder="google@gmail.com" required>
+          <br>
+          <label for="id_sender_text">Сообщение</label><br>
+          <textarea name="sender_text" id="id_sender_text" placeholder="Напишите здесь ваше сообщение." cols="40"
+            rows="10" required></textarea>
+          <br>
+          <input type="submit" value="Отправить">
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <h2 class="visually-hidden">Социальные сети</h2>
+      <ul class="social">
+        <li><a href="#">ВК</a></li>
+        <li><a href="#">Телеграм</a></li>
+        <li><a href="#">Инстаграм</a></li>
+        <li><a href="#">Твиттер</a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
 
 </html>
