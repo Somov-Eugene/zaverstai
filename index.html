@@ -37,16 +37,20 @@
   <main>
     <div class="container">
       <section id="artictles">
-        <h2>Все статьи</h2>
+        <div class="artictles_head">
+          <h2>Все статьи</h2>
 
-        <select name="article_topics">
-          <option value="all" selected>Выбрать тему</option>
-          <option value="travels">путешествия</option>
-          <option value="town">город</option>
-          <option value="books">книги</option>
-          <option value="photos">фотографии</option>
-          <option value="recipes">рецепты</option>
-        </select>
+          <div class="article_topics">
+            <select name="article_topics">
+              <option value="all" selected>Выбрать тему</option>
+              <option value="travels">путешествия</option>
+              <option value="town">город</option>
+              <option value="books">книги</option>
+              <option value="photos">фотографии</option>
+              <option value="recipes">рецепты</option>
+            </select>
+          </div>
+        </div>
 
         <ul class="artictles-list">
           <li class="artictle-item artictle-item--small">
@@ -55,8 +59,10 @@
             <p class="artictle-short">
               Летний месяц я провела в столице Германии вместе с друзьями. И вот как это было!
             </p>
-            <p class="artictle-tags" data-tags="путешествия">Теги: путешествия</p>
-            <time datetime="2020-09-29">29.09.2020</time>
+            <div class="artictle-footer">
+              <p class="artictle-tags" data-tags="путешествия">Теги: путешествия</p>
+              <time datetime="2020-09-29">29.09.2020</time>
+            </div>
           </li>
 
           <li class="artictle-item artictle-item--small">
@@ -65,8 +71,10 @@
             <p class="artictle-short">
               Собрала для вас список любимых кофеен, где подают лучший летний напиток.
             </p>
-            <p class="artictle-tags" data-tags="город">Теги: город</p>
-            <time datetime="2020-07-24">24.07.2020</time>
+            <div class="artictle-footer">
+              <p class="artictle-tags" data-tags="город">Теги: город</p>
+              <time datetime="2020-07-24">24.07.2020</time>
+            </div>
           </li>
 
           <li class="artictle-item artictle-item--small">
@@ -75,8 +83,10 @@
             <p class="artictle-short">
               Рассказываю о прочитанных за последнее время книгах: фавориты и провалы.
             </p>
-            <p class="artictle-tags" data-tags="книги">Теги: книги</p>
-            <time datetime="2020-07-15">15.07.2020</time>
+            <div class="artictle-footer">
+              <p class="artictle-tags" data-tags="книги">Теги: книги</p>
+              <time datetime="2020-07-15">15.07.2020</time>
+            </div>
           </li>
 
           <li class="artictle-item artictle-item--big">
@@ -85,8 +95,10 @@
             <p class="artictle-short">
               Поделилась с вами весенними фотографиями, и секретами удачных снимков.
             </p>
-            <p class="artictle-tags" data-tags="фотографии">Теги: фотографии</p>
-            <time datetime="2020-06-29">29.06.2020</time>
+            <div class="artictle-footer">
+              <p class="artictle-tags" data-tags="фотографии">Теги: фотографии</p>
+              <time datetime="2020-06-29">29.06.2020</time>
+            </div>
           </li>
 
           <li class="artictle-item artictle-item--big">
@@ -95,8 +107,10 @@
             <p class="artictle-short">
               Что может быть лучше чизкейка с сезонными ягодами? Только домашний чизкейк!
             </p>
-            <p class="artictle-tags" data-tags="рецепты">Теги: рецепты</p>
-            <time datetime="2020-06-24">24.06.2020</time>
+            <div class="artictle-footer">
+              <p class="artictle-tags" data-tags="рецепты">Теги: рецепты</p>
+              <time datetime="2020-06-24">24.06.2020</time>
+            </div>
           </li>
         </ul>
         <button class="artictles-more">Показать ещё</button>
@@ -105,19 +119,21 @@
       <section id="about">
         <h2>Обо мне</h2>
 
-        <img src="img/about-my.jpg" alt="Моя фотография">
-        <div class="about-text">
-          <p>Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь рассказы о моих путешествиях, снимки
-            на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.</p>
-          <p>Я работаю копирайтером, поэтому мой блог — это ещё и моё портфолио. Ниже размещены несколько моих лучших
-            рабочих текстов. Буду рада новым сотрудничествам!</p>
-          <p>Если вы хотите написать мне — это можно сделать в соцсетях или через форму. Всегда приятно услышать
-            обратную связь от читателей и познакомиться поближе.</p>
-          <p>Приятного чтения!</p>
-        </div>
-        <div class="about-cite">
-          <p>Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю настояющую
-            себя.</p>
+        <div class="about_container">
+          <img src="img/about-my.jpg" alt="Моя фотография">
+          <div class="about-text">
+            <p>Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь рассказы о моих путешествиях, снимки
+              на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.</p>
+            <p>Я работаю копирайтером, поэтому мой блог — это ещё и моё портфолио. Ниже размещены несколько моих лучших
+              рабочих текстов. Буду рада новым сотрудничествам!</p>
+            <p>Если вы хотите написать мне — это можно сделать в соцсетях или через форму. Всегда приятно услышать
+              обратную связь от читателей и познакомиться поближе.</p>
+            <p>Приятного чтения!</p>
+          </div>
+          <div class="about-cite">
+            <p>Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю настояющую
+              себя.</p>
+          </div>
         </div>
 
       </section>
