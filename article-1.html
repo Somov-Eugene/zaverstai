@@ -37,9 +37,11 @@
     <div class="container">
       <article class="article">
         <header>
-          <h1>Как себя мотивировать</h1>
-          <p class="article-tags" data-tags="путешествия, друзья">Теги: путешествия, друзья</p>
-          <time datetime="2020-09-29">29.09.2020</time>
+          <h1 class="article-head">Как себя мотивировать</h1>
+          <div class="article-tags-container">
+            <p class="article-tags" data-tags="путешествия, друзья">Теги: путешествия, друзья</p>
+            <time datetime="2020-09-29">29.09.2020</time>
+          </div>
         </header>
         <div class="main-content">
           <p>Расскажу о биопсихологической теории личности Джеффри Грея, которая помогла мне разобраться в работе
@@ -52,7 +54,7 @@
             использовать для эффективной мотивации. </p>
 
           <figure>
-            <img src="img/estee-janssens.jpg" alt="">
+            <img src="img/estee-janssens.jpg" width="997" height="463" alt="">
             <figcaption>
               Моё поведение регулируется больше BAS, поэтому при планировании целей я всегда использую позитивный
               стимул.
@@ -84,38 +86,45 @@
             <a href="#"><img src="img/icon-facebook.svg" alt="Facebook icon"></a>
             <a href="#"><img src="img/icon-vk.svg" alt="VKontakte icon"></a>
           </div>
-          <p><a class="artictles-all" href="index.html#artictles">Ко всем статьям</a></p>
         </footer>
+        <p><a class="artictles-all" href="index.html#artictles">Ко всем статьям</a></p>
       </article>
 
-      <section class="comments">
+      <section class="comments-users">
         <h2 class="visually-hidden">Комментарии к статье</h2>
         <ul class="comments-list">
           <li class="comment-item">
-            <img class="comment-author-photo" src="img/comment-photo-1.jpg" alt="Иван Петров">
-            <b class="comment-author-name">Иван Петров</b>
+            <div class="comment-user">
+              <img class="comment-author-photo" src="img/comment-photo-1.jpg" width=50" height="50" alt="Иван Петров">
+              <b class="comment-author-name">Иван Петров</b>
+            </div>
             <p class="comment-text">Отличная статья! Спасибо.</p>
           </li>
 
           <li class="comment-item">
-            <img class="comment-author-photo" src="img/comment-photo-2.jpg" alt="Ксения Ксения">
-            <b class="comment-author-name">Ксения Ксения</b>
+            <div class="comment-user">
+              <img class="comment-author-photo" src="img/comment-photo-2.jpg" width=50" height="50" alt="Ксения Ксения">
+              <b class="comment-author-name">Ксения Ксения</b>
+            </div>
             <p class="comment-text">Отличный текст, добавила в закладки.</p>
           </li>
 
           <li class="comment-item">
-            <img class="comment-author-photo" src="img/comment-photo-3.jpg" alt="Иван Иванов">
-            <b class="comment-author-name">Иван Иванов</b>
+            <div class="comment-user">
+              <img class="comment-author-photo" src="img/comment-photo-3.jpg" width=50" height="50" alt="Иван Иванов">
+              <b class="comment-author-name">Иван Иванов</b>
+            </div>
             <p class="comment-text">Основательный материал! Можешь посоветовать какие-то книги на эту тему?</p>
           </li>
         </ul>
-
+      </section>
+      <section class="comments-form">
         <h3>Оставить комментарий</h3>
-        <form class="comments-form" method="POST" action="#">
+        <form class="comment-form" method="POST" action="#">
           <input type="text" name="comment-name" placeholder="Имя" required><br>
           <input type="email" name="comment-email" placeholder="Почта" required><br>
           <textarea name="comment-text" placeholder="Написать комментарий..." cols="40" rows="10"
-            required></textarea><br>
+          required></textarea>
           <input type="submit" value="Отправить">
         </form>
       </section>
