@@ -120,19 +120,23 @@
         <h2>Обо мне</h2>
 
         <div class="about_container">
-          <img src="img/about-my.jpg" alt="Моя фотография">
+          <img src="img/about-my.jpg" width="590" alt="Моя фотография">
           <div class="about-text">
-            <p>Всем привет! Меня зовут Аня, и это мой личный блог. Здесь ты найдёшь рассказы о моих путешествиях, снимки
-              на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.</p>
-            <p>Я работаю копирайтером, поэтому мой блог — это ещё и моё портфолио. Ниже размещены несколько моих лучших
-              рабочих текстов. Буду рада новым сотрудничествам!</p>
-            <p>Если вы хотите написать мне — это можно сделать в соцсетях или через форму. Всегда приятно услышать
-              обратную связь от читателей и познакомиться поближе.</p>
-            <p>Приятного чтения!</p>
-          </div>
-          <div class="about-cite">
-            <p>Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я действительно узнаю настояющую
-              себя.</p>
+            <div class="about-text-top">
+              <p>Всем привет! Меня зовут Аня, и это мой личный блог.<br>Здесь ты найдёшь рассказы о моих путешествиях,
+                снимки на плёнку, рецепты, обзоры на книги. В общем, тексты о том, что мне инетресно.</p>
+              <p>Я работаю копирайтером, поэтому мой блог — это ещё и моё портфолио. Ниже размещены несколько моих
+                лучших
+                рабочих текстов. Буду рада новым сотрудничествам!</p>
+              <p>Если вы хотите написать мне — это можно сделать в соцсетях или через форму. Всегда приятно услышать
+                обратную связь от читателей и познакомиться поближе.</p>
+              <p>Приятного чтения!</p>
+            </div>
+            <div class="about-text-cite">
+              <p>Я верю, что каждый раз пробуя новое, выходящее за зону моего комфорта, я
+                действительно узнаю настояющую себя.</p>
+
+            </div>
           </div>
         </div>
 
@@ -144,35 +148,42 @@
         <ul class="portfolio-list">
           <li class="portfolio-item">
             <a href="#">
-              <h3>Блог HTML Academy</h3>
-              <img src="img/portfolio-img-1.jpg" alt="Как учиться продуктивно">
-              <p class="portfolio-title">«Как учиться продуктивно»</p>
-              <p class="portfolio-description">
-                Про основные методы обучения, которые помогут быстро и надолго запомнить информацию.
-              </p>
+              <img src="img/portfolio-img-1.jpg" width="387" height="525" alt="Как учиться продуктивно">
+              <div class="portfolio-item-text portfolio-item-text--1">
+                <h3>Блог HTML Academy</h3>
+                <p class="portfolio-title">«Как учиться продуктивно»</p>
+                <p class="portfolio-description">
+                  Про основные методы обучения, которые помогут быстро и надолго запомнить информацию.
+                </p>
+              </div>
             </a>
           </li>
 
           <li class="portfolio-item">
             <a href="#">
-              <h3>Журнал «LNK»</h3>
-              <img src="img/portfolio-img-2.jpg" alt="Зачем поцелуи нужны человеку? И какие они бывают">
-              <p class="portfolio-title">«Зачем поцелуи нужны человеку?<br>И какие они бывают»</p>
-              <p class="portfolio-description">
-                Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются?<br>
-                Какие мысли вкладывают в этот ритуал? И где корни этой практики?
-              </p>
+              <img src="img/portfolio-img-2.jpg" width="387" height="525"
+                alt="Зачем поцелуи нужны человеку? И какие они бывают">
+              <div class="portfolio-item-text portfolio-item-text--2">
+                <h3>Журнал «LNK»</h3>
+                <p class="portfolio-title">«Зачем поцелуи нужны человеку?<br>И какие они бывают»</p>
+                <p class="portfolio-description">
+                  Поцелуи — повсеместная ежедневная практика. Но зачем люди целуются?<br>
+                  Какие мысли вкладывают в этот ритуал? И где корни этой практики?
+                </p>
+              </div>
             </a>
           </li>
 
           <li class="portfolio-item">
             <a href="#">
-              <h3>Журнал «Т — Л»</h3>
-              <img src="img/portfolio-img-3.jpg" alt="Советы по эффективной удалённой работе">
-              <p class="portfolio-title">«Советы по эффективной удалённой работе»</p>
-              <p class="portfolio-description">
-                Поделилась лайфхаками, которые помогают мне работать продуктивно из дома.
-              </p>
+              <img src="img/portfolio-img-3.jpg" width="387" height="525" alt="Советы по эффективной удалённой работе">
+              <div class="portfolio-item-text portfolio-item-text--3">
+                <h3>Журнал «Т — Л»</h3>
+                <p class="portfolio-title">«Советы по эффективной<br>удалённой работе»</p>
+                <p class="portfolio-description">
+                  Поделилась лайфхаками, которые помогают мне работать продуктивно из дома.
+                </p>
+              </div>
             </a>
           </li>
         </ul>
@@ -183,20 +194,25 @@
       <section id="write">
         <h2>Написать мне</h2>
 
-        <form class="write-form" method="POST" action="#">
-          <label for="id_sender_name">Ваше имя</label>
-          <input type="text" name="sender_name" id="id_sender_name" placeholder="Иван Иванов" required>
-          <br>
-          <label for="id_sender_email">Email</label>
-          <input type="email" name="sender_email" id="id_sender_email" placeholder="google@gmail.com" required>
-          <br>
-          <label for="id_sender_text">Сообщение</label><br>
-          <textarea name="sender_text" id="id_sender_text" placeholder="Напишите здесь ваше сообщение." cols="40"
-            rows="10" required></textarea>
-          <br>
-          <input type="submit" value="Отправить">
-        </form>
-      </section>
+        <div class="form-bg">
+          <form class="write-form" method="POST" action="#">
+            <div class="write-form-name">
+              <label for="id_sender_name">Ваше имя</label>
+              <input type="text" name="sender_name" id="id_sender_name" placeholder="Иван Иванов" required>
+            </div>
+            <div class="write-form-email">
+              <label for="id_sender_email">Email</label>
+              <input type="email" name="sender_email" id="id_sender_email" placeholder="google@gmail.com" required>
+            </div>
+            <div class="write-form-text">
+              <label for="id_sender_text">Сообщение</label><br>
+              <textarea name="sender_text" id="id_sender_text" placeholder="Напишите здесь ваше сообщение." cols="40"
+              rows="10" required></textarea>
+            </div>
+            <input type="submit" value="Отправить">
+          </form>
+        </div>
+        </section>
     </div>
   </main>
 
