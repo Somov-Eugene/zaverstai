@@ -152,7 +152,11 @@ time {
 #about,
 #portfolio,
 #write {
-  padding: 0 120px;
+  margin: 0 120px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 #artictles h2,
@@ -172,6 +176,7 @@ time {
 .artictles_head {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .artictles-list {
@@ -227,7 +232,9 @@ time {
   min-height: 552px;
 }
 
-.artictles-more {
+.artictles-more,
+.portfolio-more,
+input[type=submit] {
   color: #202117;
   background-color: #ffffff;
   border: 1px solid #202117;
@@ -241,12 +248,203 @@ time {
   display: flex;
 }
 
+.about_container img {
+  width: 590px;
+  border-radius: 10px;
+}
+
+.about-text {
+  margin-left: 20px;
+}
+
+.about-text-top {
+  font-size: 16px;
+  line-height: 26px;
+  margin-left: 20px;
+  width: 485px;
+}
+
+.about-text-top p {
+  padding-top: 42px;
+}
+
+.about-text-cite {
+  margin-top: 72px;
+  min-height: 215px;
+  border-left: 3px solid #D7D1C9;
+}
+
+.about-text-cite p {
+  font-style: italic;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  padding: 26px 0 0 20px;
+
+}
+
+/* portfolio */
+.portfolio-list {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 116px;
+
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+
+.portfolio-item {
+  width: 387px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+.portfolio-item a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.portfolio-item h3,
+.portfolio-title {
+  font-family: "Spectral SC", serif;
+  font-style: normal;
+  font-weight: bold;
+}
+
+.portfolio-item h3 {
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.portfolio-title {
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.portfolio-description {
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.portfolio-item img {
+  position: relative;
+  display: block;
+  width: 387px;
+  height: 525px;
+  border: 1px solid #C4C4C4;
+  border-radius: 10px;
+  filter: blur(5px);
+}
+
+.portfolio-item img:hover,
+.portfolio-item-text:hover {
+  transition: filter 250ms ease-in;
+  filter: blur(0);
+}
+
+.portfolio-item-text {
+  position: absolute;
+  top: 140px;
+  z-index: 1;
+}
+
+.portfolio-item-text--2 {
+  color: #ffffff;
+}
+
+.portfolio-item-text--1 .portfolio-description {
+  padding: 17px 55px;
+}
+
+.portfolio-item-text--2 .portfolio-description {
+  padding: 17px 32px;
+}
+
+.portfolio-item-text--3 .portfolio-description {
+  padding: 17px 18px;
+}
+
+
+/* write */
+#write .form-bg {
+  width: 996px;
+  height: 741px;
+}
+
+#write .write-form {
+  padding: 53px 81px 62px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background: #ffffff url("../img/bg-form-1.jpg") no-repeat center bottom;
+}
+
+#write .write-form-name,
+#write .write-form-email,
+#write .write-form-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+#write input[type=submit] {
+  margin-top: 20px;
+  background-color: transparent;
+}
+
+#write input[type=text],
+#write input[type=email],
+#write .write-form-text textarea {
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 1px solid #202117;
+  border-radius: 10px;
+}
+
+#write input[type=text],
+#write input[type=email] {
+  width: 407px;
+  height: 63px;
+}
+
+#write .write-form-text textarea {
+  width: 837px;
+  height: 293px;
+  resize: none;
+}
+
+#write label {
+  font-family: "Spectral SC", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: initial;
+
+  padding-top: 20px;
+  padding-bottom: 12px;
+}
+
+#write input::placeholder {
+  opacity: 0.7;
+  color: #202117;
+}
+
 /*
  *****************************
  *  footer
  *****************************
  */
 .footer {
+  margin-top: 81px;
   background-color: #d7d1c9;
   min-height: 181px;
 }
